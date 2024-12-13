@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Dice game</title>
 </head>
 
 <body>
@@ -16,19 +19,20 @@
             <h4>Pradėti naują žaidimą</h4>
         </button>
     </header>
+
     <main>
-        <section class="payer">
+        <section class="player">
             <div class="total">
                 <h3>Žaidėjas 1</h3>
                 <h2>0</h2>
             </div>
-            <div>
+            <div class="current">
                 <h2>0</h2>
             </div>
         </section>
         <section class="game-container">
             <div class="img-container">
-                <img src="images/dice-0.png" alt="" class="dice">
+                <img src="./img/dice-0.png" alt="" class="dice">
             </div>
             <div class="button-container">
                 <button class="btn-roll">
@@ -39,16 +43,15 @@
                 </button>
             </div>
         </section>
-        <section class="payer">
+        <section class="player">
             <div class="total">
                 <h3>Žaidėjas 2</h3>
                 <h2>0</h2>
             </div>
-            <div>
+            <div class="current">
                 <h2>0</h2>
             </div>
         </section>
-
     </main>
 </body>
 
